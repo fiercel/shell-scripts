@@ -3,7 +3,7 @@
 # init
 apt update && apt upgrade -y
 apt --purge autoremove -y && apt autoclean
-apt install git wget curl ufw vim htop -y
+apt install sudo mtr git wget curl ufw vim htop -y
 mkdir scripts
 cd scripts
 
