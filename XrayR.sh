@@ -29,10 +29,6 @@ ufw allow 12393/tcp
 ufw allow 12393/udp
 ufw reload
 
-# add swap (2GB default)
-wget https://www.moerats.com/usr/shell/swap.sh && chmod +x swap.sh
-echo -e "1\n2048\n" | ./swap.sh
-
 # optimize mem
 sed -i 's/#Storage=auto/Storage=none/g' /etc/systemd/journald.conf
 systemctl restart systemd-journald
